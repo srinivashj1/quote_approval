@@ -1,0 +1,16 @@
+applications:
+- name: approuter
+  memory: 128M
+  buildpacks:
+    - nodejs_buildpack
+  services:
+    - quote-approval-xsuaa
+  env:
+    destinations: |
+      [
+        {
+          "name": "backend",
+          "url": "https://quote-approval-app.cfapps.ap21.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]

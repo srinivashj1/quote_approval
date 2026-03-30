@@ -1,0 +1,25 @@
+{
+    "routes": [
+        {
+            "source": "^/api/(.*)$",
+            "target": "/api/$1",
+            "destination": "backend",
+            "authenticationType": "none",
+            "csrfProtection": false
+        },
+        {
+            "source": "^/decision(.*)$",
+            "target": "/decision$1",
+            "destination": "backend",
+            "authenticationType": "xsuaa",
+            "csrfProtection": false
+        },
+        {
+            "source": "^/submitDecision(.*)$",
+            "target": "/submitDecision$1",
+            "destination": "backend",
+            "authenticationType": "xsuaa",
+            "csrfProtection": false
+        }
+    ]
+}
