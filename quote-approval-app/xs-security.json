@@ -1,0 +1,13 @@
+{
+    "xsappname": "quote-approval-app",
+    "tenant-mode": "dedicated",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.api",
+            "description": "API access"
+        }
+    ],
+    "authorities": [
+        "$XSAPPNAME.api"
+    ]
+}

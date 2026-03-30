@@ -1,0 +1,11 @@
+applications:
+- name: quote-approval-app
+  memory: 1G
+  disk_quota: 1G
+  default-route: true
+  buildpacks:
+    - nodejs_buildpack
+  env: 
+      NODE_ENV: production
+      NPM_CONFIG_OMIT: dev
+      APPROUTER_URL: https://approuter.cfapps.ap21.hana.ondemand.com

@@ -1,0 +1,20 @@
+{
+    "name": "quote-approval-app",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "engines": {
+        "node": "20.x",
+        "npm": "9.x"
+    },
+    "dependencies": {
+        "@sap/xsenv": "^6.0.0",
+        "@sap/xssec": "^4.0.0",
+        "express": "^4.22.1",
+        "jsonwebtoken": "^9.0.3",
+        "passport": "^0.7.0",
+        "uuid": "^9.0.1"
+    }
+}
